@@ -160,7 +160,7 @@ const myChart = new Chart(ctx, {
         hidden: true,
       },
       {
-        label: table_country12],
+        label: table_country[12],
         data: table_val[13],
         backgroundColor: ["rgba(235, 152, 78, 1)"],
         borderColor: ["rgba(235, 152, 78, 1)"],
@@ -353,7 +353,7 @@ const myChart = new Chart(ctx, {
       },
     },
   },
-};
+});
 
 // ------------we get the variables for graphique n° 2---------------------------------------------------------------------------------
 
@@ -398,7 +398,7 @@ for (r = 0; r < tbody2.getElementsByTagName("tr").length; r++) {
   );
 }
 
-// ----------------- canvas2 -------------------------------
+// -----------------We create the canvas2 -------------------------------
 
 var canvas2 = document.createElement("canvas");
 canvas2.setAttribute("id", "graph2");
@@ -408,7 +408,7 @@ table2.before(canvas2);
 
 
 
-// ------------------------ graph2 ------------------------------
+// ------------------------ graphique n° 2 charts.js  ------------------------------
 
 const ctx2 = document.getElementById("graph2");
 const myChart2 = new Chart(ctx2, {
@@ -441,18 +441,18 @@ const myChart2 = new Chart(ctx2, {
   },
 });
 
-// -------------------------------------- Graph 3 -----------------------------------------------------
+// --------------------------------------we get the variables for graphique n° 3 -----------------------------------------------------
 var valeurs = [];
 var axisx = [];
 var i = 0;
-
+//---------------------------We create the canvas3------------------------------
 var canvas3 = document.createElement("canvas");
 var firstHeading = document.querySelector("#firstHeading");
 canvas3.setAttribute("id", "graph3");
 canvas3.setAttribute("width", "auto");
 canvas3.setAttribute("height", "150");
 firstHeading.after(canvas3);
-
+//---------------------------------graphique n° 2 charts.js------------------------------------------------------
 const ctx3 = document.getElementById("graph3");
 const myChart3 = new Chart(ctx3, {
   type: "line",
@@ -490,7 +490,7 @@ const myChart3 = new Chart(ctx3, {
   },
 });
 
-// ----------------------------- table 3 https://canvasjs.com/services/data/datapoints.php ------------------------------------
+// ----------------------------- link to get the values from  https://canvasjs.com/services/data/datapoints.php ------------------------------------
 function test() {
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "https://canvasjs.com/services/data/datapoints.php", true);
